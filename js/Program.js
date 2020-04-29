@@ -1,5 +1,6 @@
-import { Calculate } from './Calculate.js'
+import { Palindromes } from './Palindromes.js'
 import { RenderResults } from './RenderResults.js'
+import { Sort } from './Sort.js'
 
 window.onload = () => {
     
@@ -9,12 +10,14 @@ window.onload = () => {
 
     let Exercise1Results = {
         "List" : Ex1,
-        "Palindromes" : Calculate(Ex1)
+        "Palindromes" : Palindromes(Ex1)
     }
     let Exercise2Results = {
         "List" : Ex2,
-        "Palindromes" : Calculate(Ex2)
+        "Palindromes" : Palindromes(Ex2)
     }
+
+    Sort(Ex3)
 
     RenderResults(Exercise1Results, Exercise2Results)
 

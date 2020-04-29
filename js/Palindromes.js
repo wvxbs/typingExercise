@@ -1,4 +1,4 @@
-export const Calculate = Arr => {
+export const Palindromes = Arr => {
     let Palindromes = getPalindromes(Arr)
     return Palindromes 
 
@@ -12,6 +12,7 @@ const getPalindromes = Arr => {
         Compare = reverseString(res.toString())
 
         if(res.toString() == Compare) {
+            if(Compare.length > 1)
             Palindromes.push(res)
         }
 
