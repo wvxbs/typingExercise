@@ -1,5 +1,6 @@
 export const Calculate = Arr => {
-    getPalindromes(Arr)
+    let Palindromes = getPalindromes(Arr)
+    return Palindromes 
 
 }
 
@@ -9,8 +10,6 @@ const getPalindromes = Arr => {
 
     Arr.map((item, i) => {                
         Compare = reverseString(item.toString())
-
-        alert(Compare)
 
         if(item.toString() == Compare) {
             Palindromes.push(item)
@@ -23,11 +22,8 @@ const getPalindromes = Arr => {
 }
 
 const reverseString = str => {
-    var ReversedString = str.split("")
+    var ReversedString = str.split("").reverse()
 
-    ReversedString = ReversedString.reverse()
+    return ReversedString //.replace(",", "")
 
-    ReversedString = ReversedString.join()
-
-    return ReversedString  
 }
