@@ -8,11 +8,11 @@ const getPalindromes = Arr => {
     let Palindromes = []
     var Compare = ""
 
-    Arr.map((item, i) => {                
-        Compare = reverseString(item.toString())
+    Arr.map(res => {                
+        Compare = reverseString(res.toString())
 
-        if(item.toString() == Compare) {
-            Palindromes.push(item)
+        if(res.toString() == Compare) {
+            Palindromes.push(res)
         }
 
     })
@@ -22,8 +22,12 @@ const getPalindromes = Arr => {
 }
 
 const reverseString = str => {
-    var ReversedString = str.split("").reverse()
+    var ReversedString = str
+        .split("")
+        .reverse()
+        .join()
+        .replace(/,/g, '')
 
-    return ReversedString //.replace(",", "")
+    return ReversedString
 
 }
