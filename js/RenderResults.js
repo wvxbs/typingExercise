@@ -5,8 +5,8 @@ export const RenderResults = () => {
     //div.className = 'border pad'
 
     //document.body.appendChild(div)
-    renderEx1("Boa fiote")
-    renderEx2("BOa fião")
+    renderEx1("Palindromos numéricos")
+    renderEx2("Palindromos textuais")
 
 }
 

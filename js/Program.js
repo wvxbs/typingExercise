@@ -5,8 +5,8 @@ window.onload = () => {
     
     let NumberList = ["1232", "121", "96235", "72627", "801108", "523925", "9", "865568"]
 
-    Calculate(NumberList)
+    let Results = Calculate(NumberList)
 
-    RenderResults(...NumberList)
+    RenderResults(Results)
 
 }
