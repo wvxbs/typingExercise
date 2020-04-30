@@ -1,20 +1,20 @@
 export const Sort = Arr => {
-    let Sorted = Sorter(Arr)
+    var Sorted = Sorter(Arr)
+    var Biggest = getBiggestItem(Sorted) 
 
-    return Sorted
+    return Biggest
+
 }
 
-let comp = 0
-
-let Sorted = []
-
 const Sorter = Arr => {
-    Arr.map(res => {
-        if(res > comp){
-            Sorted.push(comp)
-        }
+    var Sorted = Arr.sort((a, b) => a-b)
+    
+    return Sorted
 
-        comp = res
-    })
+}
 
+const getBiggestItem = Arr => {
+    var Item = Arr.slice(-1)
+
+    return Item
 }

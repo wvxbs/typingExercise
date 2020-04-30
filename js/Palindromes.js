@@ -1,16 +1,15 @@
 export const Palindromes = Arr => {
-    let Palindromes = getPalindromes(Arr)
+    var Palindromes = getPalindromes(Arr)
     return Palindromes 
 
 }
 
 const getPalindromes = Arr => {
-    let Palindromes = []
+    var Palindromes = []
     var Compare = ""
 
     Arr.map(res => {                
         Compare = reverseString(res.toString())
-
         if(res.toString() == Compare) {
             if(Compare.length > 1)
             Palindromes.push(res)
@@ -24,11 +23,9 @@ const getPalindromes = Arr => {
 
 const reverseString = str => {
     var ReversedString = str
-        .split("")
-        .reverse()
-        .join()
-        .replace(/,/g, '')
-
+    .split("")
+    .reverse()
+    .join("")
     return ReversedString
 
 }
