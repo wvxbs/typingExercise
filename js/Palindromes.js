@@ -11,11 +11,8 @@ const getPalindromes = Arr => {
     Arr.map(res => {                
         Compare = reverseString(res.toString())
         if(res.toString() == Compare) {
-            if(Compare.length > 1)
             Palindromes.push(res)
-        }
-
-    })
+        }})
 
     return Palindromes
 
@@ -26,6 +23,7 @@ const reverseString = str => {
     .split("")
     .reverse()
     .join("")
+    
     return ReversedString
 
 }

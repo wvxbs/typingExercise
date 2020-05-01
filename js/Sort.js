@@ -7,9 +7,13 @@ export const Sort = Arr => {
 }
 
 const Sorter = Arr => {
-    var Sorted = Arr.sort((a, b) => a-b)
-    
-    return Sorted
+    var Sorter = []
+    if(typeof(Arr[0])=="string") 
+        Sorter = Arr.sort()
+    else 
+        Sorter.push(Math.max.apply(null, Arr))
+
+    return Sorter
 
 }
 
