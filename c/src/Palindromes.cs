@@ -33,11 +33,12 @@ namespace c.src
             return Palindromes.ToArray();
         }
 
-        public string reverseString(string str) 
-        {              
-            string ReversedString = str.split().reverse().join("");
+        public string reverseString(String str) 
+        {     
+            
+            string ReversedString = Array.Reverse(str.ToCharArray());
 
-            return str;
+            return new string (ReversedString);
         }
 
         public int reverseString(int num) 
